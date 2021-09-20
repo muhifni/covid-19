@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* mengatur font style yang ada didalam elemen body */
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    /* memberi warna pada huruf */
+    color: #404e67;
+
+    /* memebri warna pada background */
+    background-color: #f5f7fa;
+
+    /* digunakan untuk menghapus seluruh padding dan margin standar yang diberikan browser pada elemen */
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: #404e67;
+}
+
+
+footer{
+    padding: 20px;
+    color: #90A4AE;
+    background-color: #FFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #00B5B8;
+}
+
+nav a:active{
+    border-bottom: 2px solid #00B5B8;
+}
+
+.profile {
+    padding-bottom: 40px !important;
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile img{
+    width: 200px;
+}
+
+#about section h3{
+    text-align: center;
+}
+
+#about section table{
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.data-card{
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #FFF;
+    
+}
+
+.data-card p{
+    font-size: 14px;
+}
+
+.data-card b{
+    font-size: 28px !important;
+}
+
+.c-odp{
+    background: rgb(17,165,120);
+    background: linear-gradient(90deg, rgba(17,165,120,1) 30%, rgba(46,225,170,1) 81%);
+    width: 30.5%;
+    height: 100%;
+    float: left;
+    padding: 18px;
+    
+}
+
+.c-pdp{
+    background: rgb(194,24,91);
+    background: linear-gradient(90deg, rgba(194,24,91,1) 30%, rgba(234,88,139,1) 77%);
+    width: 30.5%;
+    height: 100%;
+    float: left;
+    margin-left: 52px;
+    padding: 18px;
+}
+
+.c-positif{
+    background: rgb(255,66,92);
+    background: linear-gradient(90deg, rgba(255,66,92,1) 26%, rgba(255,161,174,1) 91%);
+    width: 30.5%;
+    height: 100%;
+    float: left;
+    margin-left: 52px;
+    padding: 18px;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 15px;
+    background-color: #2f7283;
+    text-align: center;
+    color: white;
+}
+
+nav li{
+    display: inline; /* menerapkan sifat inline, sehingga elemen akan ditampilkan tanpa membuat baris baru */
+    list-style-type: none; /* menghilangkan tanda titik yang dihasilkan tiap item pada list */
+    margin-right: 20px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav{
+    box-shadow: 17px 15px 16px -24px rgba(0,0,0,0.6);
+    background-color: white;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.emoji{
+    width: 75px;
+    float: left;
+    margin-right: 28px;
+}
+
+main{
+    padding: 25px;
+    overflow: auto;
+}
+
+article, aside{
+    float: left;
+    width: 100%;
+}
+
+header {
+    display: inline;
+}
+
+.c-telp{
+    font-size: 25px;
+}
+
+.telp a{
+    text-decoration: none;
+}
+
+#kontak {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.telp-l {
+    float: left;
+    width: 50%;
+}
+
+.telp-r {
+    float: right;
+    width: 50%;
+}
+
+#tabel{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#tabel table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th.clr-wht{
+    color: white;
+}
+
+#tabel th, #tabel td {
+  padding: 8px 22px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tabel th{
+    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+#tabel td.cntr, #tabel th.cntr{
+    text-align: center;
+}
+
+.header-data{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.btn-telp{
+    background-color: #3ecf8e;
+    color: white;
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    width: 160px;
+    height: 50px;
+    display:inline-block;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 15px;
+}
+
+@media screen and (max-width: 1000px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .c-telp{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 485px){
+    #tabel th, 
+    #tabel td{
+        padding: 3px 3px;
+        font-size: 0.9em;
+    }
+}
+
