@@ -1,0 +1,20 @@
+@media screen and (max-width: 1000px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .c-telp{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 485px){
+    #tabel th, 
+    #tabel td{
+        padding: 3px 3px;
+        font-size: 0.9em;
+    }
+}

@@ -91,34 +91,33 @@ nav a:active{
     font-size: 28px !important;
 }
 
-.c-odp{
-    background: rgb(17,165,120);
-    background: linear-gradient(90deg, rgba(17,165,120,1) 30%, rgba(46,225,170,1) 81%);
-    width: 30.5%;
-    height: 100%;
-    float: left;
-    padding: 18px;
-    
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.c-pdp{
-    background: rgb(194,24,91);
-    background: linear-gradient(90deg, rgba(194,24,91,1) 30%, rgba(234,88,139,1) 77%);
-    width: 30.5%;
-    height: 100%;
-    float: left;
-    margin-left: 52px;
+.flex-item{
+    width: 400px;
+    /* height: 100%;     */
     padding: 18px;
+    margin: 10px;
+}
+
+.c-sembuh{
+    background: rgb(17,165,120);
+    background: linear-gradient(90deg, rgba(17,165,120,1) 30%, rgba(46,225,170,1) 81%);    
 }
 
 .c-positif{
+    background: rgb(194,24,91);
+    background: linear-gradient(90deg, rgba(194,24,91,1) 30%, rgba(234,88,139,1) 77%);    
+}
+
+.c-meninggal{
     background: rgb(255,66,92);
-    background: linear-gradient(90deg, rgba(255,66,92,1) 26%, rgba(255,161,174,1) 91%);
-    width: 30.5%;
-    height: 100%;
-    float: left;
-    margin-left: 52px;
-    padding: 18px;
+    background: linear-gradient(90deg, rgba(255,66,92,1) 26%, rgba(255,161,174,1) 91%);    
 }
 
 .jumbotron{
@@ -223,7 +222,7 @@ th.clr-wht{
     border-bottom: 2px solid #ddd;
 }
 
-#tabel td.cntr, #tabel th.cntr{
+#tabel td.text-center, #tabel th.text-center{
     text-align: center;
 }
 
@@ -247,24 +246,31 @@ th.clr-wht{
     padding: 16px 15px;
 }
 
-@media screen and (max-width: 1000px){
-    .container {
-        width: 100%;
-        margin: auto;
-    }
+.fw-bold{
+    font-weight: 700;
 }
 
-@media screen and (max-width: 600px){
-    .c-telp{
-        width: 100%;
-    }
+.bg-red{
+    background-color: #FF1744;
 }
 
-@media screen and (max-width: 485px){
-    #tabel th, 
-    #tabel td{
-        padding: 3px 3px;
-        font-size: 0.9em;
-    }
+.bg-orange{
+    background-color: #FFA000;
+}
+
+.bg-blue{
+    background-color: #00B5B8; 
+}
+
+.text-red{
+    color: #FF1744;
+}
+
+.text-orange{
+    color: #FFA000;
+}
+
+.text-blue{
+    color: #00B5B8; 
 }
 
