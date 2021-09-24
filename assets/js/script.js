@@ -1,5 +1,18 @@
 "use strict"
 
+// fungsi utk memberikan titik setelah 3 angka
+function numberWithDot(x) {
+    let parts = x.toString().split(".");
+    parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+    return parts.join(",");
+    }
+
+// var calculation = 1501764;
+
+// numberWithDot((calculation));
+
+
+// fungsi utk mengambil data dari API
 function dataTerbaru() {
     // menginisialisasi class XHR
     const xhttp = new XMLHttpRequest();
@@ -66,7 +79,11 @@ function dataTerbaru() {
                                 
                 // memasukkan hasilnya kedalam kedalam table menggunakan method appendChild
                 table_covid.querySelector('tbody').appendChild(tr);
-            }                        
+            }
+            total_sembuh = numberWithDot(total_sembuh);
+            total_positif = numberWithDot(total_positif);
+            total_meninggal = numberWithDot(total_meninggal);            
+
             // membuat tag html
             const tr = document.createElement('tr');
             const p_sembuh = document.createElement('p');
@@ -84,12 +101,13 @@ function dataTerbaru() {
             const card_positif = document.getElementById('positif');
             const card_meninggal = document.getElementById('meninggal');
 
+            // memasukkan total kasus kedalam element
             p_sembuh.innerHTML = `<p><b>${total_sembuh}</b> Orang</p>`;
             card_sembuh.appendChild(p_sembuh);
 
             p_positif.innerHTML = `<p><b>${total_positif}</b> Orang</p>`;
             card_positif.appendChild(p_positif);
-
+    
             p_meninggal.innerHTML = `<p><b>${total_meninggal}</b> Orang</p>`;
             card_meninggal.appendChild(p_meninggal);
             
