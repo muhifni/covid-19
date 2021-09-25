@@ -24,6 +24,7 @@ function dataTerbaru() {
             result = result.features;
             // console.log(result);
 
+            // membuat array kosong utk menampung data
             const myData = [];
 
             for (let data of result){
@@ -32,7 +33,7 @@ function dataTerbaru() {
                 // const FID = data.filter(n => n.FID == 1 );                            
             }            
 
-            // sort ascending array by value of object
+            // mengurutkan data berdasarkan provinsi (a-z)
             myData.sort((a, b) => {
                 let provinsiA = a.Provinsi.toUpperCase(); // ignore upper and lowercase
                 let provinsiB = b.Provinsi.toUpperCase(); // ignore upper and lowercase
@@ -94,14 +95,15 @@ function dataTerbaru() {
             tr.innerHTML += `<th class="clr-wht text-center bg-blue">${total_sembuh}</th>`; 
             tr.innerHTML += `<th class="clr-wht text-center bg-orange">${total_positif}</th>`; 
             tr.innerHTML += `<th class="clr-wht text-center bg-red">${total_meninggal}</th>`;
-
+            
             table_covid.querySelector('tbody').appendChild(tr);
 
+            // =========================================================
             const card_sembuh = document.getElementById('sembuh');
             const card_positif = document.getElementById('positif');
             const card_meninggal = document.getElementById('meninggal');
 
-            // memasukkan total kasus kedalam element
+            // memasukkan total kasus kedalam card
             p_sembuh.innerHTML = `<p><b>${total_sembuh}</b> Orang</p>`;
             card_sembuh.appendChild(p_sembuh);
 
