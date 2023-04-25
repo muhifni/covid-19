@@ -7,10 +7,6 @@ function numberWithDot(x) {
     return parts.join(",");
     }
 
-// var calculation = 1501764;
-
-// numberWithDot((calculation));
-
 
 // fungsi utk mengambil data dari API
 function dataTerbaru() {
