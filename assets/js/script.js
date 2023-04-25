@@ -7,7 +7,6 @@ function numberWithDot(x) {
     return parts.join(",");
     }
 
-
 // fungsi utk mengambil data dari API
 function dataTerbaru() {
     // menginisialisasi class XHR
